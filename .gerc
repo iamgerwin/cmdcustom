@@ -1,3 +1,5 @@
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+
 #ADD THIS TO THE END OF .zshrc | .bashrc file
 #if [ -f ~/your_dir/.gerc ]; then
 #    . ~/your_dir/.gerc
