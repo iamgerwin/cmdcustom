@@ -20,7 +20,6 @@ alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stab
 #PHP
 alias art="php artisan"
 
-
 #SHORTCODE
 function gacp() {
     git add .
