@@ -14,3 +14,7 @@ alias ec2-yelp="ssh -i  ~/Work/yelp-docker/credentials/Lab-Carlo.pem ubuntu@52.7
 
 #GIT
 alias glog1="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+#NPM
+alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stable && npm rebuild"
+
