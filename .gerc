@@ -19,3 +19,11 @@ alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stab
 
 #PHP
 alias art="php artisan"
+
+
+#SHORTCODE
+function lazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
