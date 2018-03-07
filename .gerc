@@ -1,0 +1,16 @@
+#ADD THIS TO THE END OF .zshrc | .bashrc file
+#if [ -f ~/your_dir/.gerc ]; then
+#    . ~/your_dir/.gerc
+#fi
+
+#REMOVE USERNAME TERMINAL
+prompt_context() {}
+
+#CONNECT MYSQL
+alias mysql-conenct-yelp="mysql --host=127.0.0.1 --port=3301 -u root -p"
+
+#CONNECT EXTERNAL SERVER
+alias ec2-yelp="ssh -i  ~/Work/yelp-docker/credentials/Lab-Carlo.pem ubuntu@52.74.172.67"
+
+#GIT
+alias glog1="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
