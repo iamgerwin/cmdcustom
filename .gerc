@@ -3,6 +3,8 @@
 #    . ~/your_dir/.gerc
 #fi
 
+export PATH=$PATH:$HOME/.config/composer/vendor/bin
+
 #REMOVE USERNAME TERMINAL
 prompt_context() {}
 
