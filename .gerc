@@ -38,17 +38,19 @@ function gacp() {
 alias reloadrc="source ~/.zshrc"
 
 
-#NEWLINE
+#PROMPT MODS
 prompt_newline() {
   if [[ -n $CURRENT_BG ]]; then
-    echo -n "%{%k%F{$CURRENT_BG}%} $SEGMENT_SEPARATOR
-%{%k%F{blue}%} $SEGMENT_SEPARATOR"
+      print -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
   else
-    echo -n "%{%k%}"
+      print -n "%{%k%}"
   fi
 
-  echo -n "%{%f%}"
-  CURRENT_BG=''
+  print -n "%{%f%}"
+  CURRENT_BG='' 
+
+  #Adds the new line and ➜ as the start character.
+  printf "\n ➜";
 }
 build_prompt() {
   RETVAL=$?
