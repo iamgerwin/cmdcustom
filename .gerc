@@ -22,3 +22,15 @@ alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stab
 
 #PHP
 alias art="php artisan"
+
+#DIRECTORY
+alias cdyelptheme="cd ~/Work/yelp-docker/yelp-wp/wp-content/themes/yelp"
+alias editrc="nano ~/cmdcustom/.gerc"
+
+#SHORTCODE
+function gacp() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
+
