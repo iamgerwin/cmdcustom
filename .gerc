@@ -12,6 +12,8 @@ alias mysql-conenct-yelp="mysql --host=127.0.0.1 --port=3301 -u root -p"
 
 #GIT
 alias glog1="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gc="git checkout"
+alias gb="git branch"
 
 #NPM
 alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stable && npm rebuild"
@@ -32,17 +34,19 @@ function gacp() {
 
 alias reloadrc="source ~/.zshrc"
 
-# PROMPT MODS
+#PROMPT MODS
 prompt_newline() {
   if [[ -n $CURRENT_BG ]]; then
-    echo -n "%{%k%F{$CURRENT_BG}%} $SEGMENT_SEPARATOR
-%{%k%F{blue}%} $SEGMENT_SEPARATOR"
+      print -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
   else
-    echo -n "%{%k%}"
+      print -n "%{%k%}"
   fi
 
-  echo -n "%{%f%}"
-  CURRENT_BG=''
+  print -n "%{%f%}"
+  CURRENT_BG='' 
+
+  #Adds the new line and ➜ as the start character.
+  printf "\n ➜";
 }
 build_prompt() {
   RETVAL=$?
