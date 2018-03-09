@@ -4,6 +4,7 @@
 #fi
 
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
+export PATH=~/.npm-global/bin:$PATH
 
 #REMOVE USERNAME TERMINAL
 prompt_context() {}
