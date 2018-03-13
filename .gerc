@@ -26,6 +26,10 @@ alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stab
 #PHP
 alias art="php artisan"
 
+#DOCKER
+alias dockstopall="docker stop $(docker ps -a -q)"
+alias dockmall="docker rm $(docker ps -a -q)"
+
 #DIRECTORY
 alias cdyelptheme="cd ~/Work/yelp-docker/yelp-wp/wp-content/themes/yelp"
 alias editrc="nano ~/cmdcustom/.gerc"
