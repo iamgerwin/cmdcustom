@@ -6,6 +6,7 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 #fi
 
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
+export PATH=~/.npm-global/bin:$PATH
 
 #CONNECT MYSQL
 alias mysql-conenct-yelp="mysql --host=127.0.0.1 --port=3301 -u root -p"
@@ -20,6 +21,10 @@ alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stab
 
 #PHP
 alias art="php artisan"
+
+#DOCKER
+alias dockstopall="docker stop $(docker ps -a -q)"
+alias dockmall="docker rm $(docker ps -a -q)"
 
 #DIRECTORY
 alias cdyelptheme="cd ~/Work/yelp-docker/yelp-wp/wp-content/themes/yelp"
