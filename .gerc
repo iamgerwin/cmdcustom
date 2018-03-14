@@ -26,6 +26,7 @@ alias art="php artisan"
 alias dockstopall="docker stop $(docker ps -a -q)"
 alias dockrmall="docker rm $(docker ps -a -q)"
 alias dcup="docker-compose up -d"
+alias dsysprune="docker system prune -a "
 
 #DIRECTORY
 alias cdyelptheme="cd ~/Work/yelp-docker/yelp-wp/wp-content/themes/yelp"
