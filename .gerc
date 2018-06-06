@@ -29,6 +29,9 @@ alias dockrmall="docker rm $(docker ps -a -q)"
 alias dcup="docker-compose up -d"
 alias dockprune="docker system prune -a"
 
+# TRAEFIK
+alias traefik-start="sudo /Users/gerwin/Work/traefik/traefik -c /Users/gerwin/Work/traefik/traefik.toml"
+
 #DIRECTORY
 alias cdyelptheme="cd ~/Work/yelp-docker/yelp-wp/wp-content/themes/yelp"
 alias editrc="nano ~/cmdcustom/.gerc"
