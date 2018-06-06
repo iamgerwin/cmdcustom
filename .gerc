@@ -28,13 +28,10 @@ alias dockstopall="docker stop $(docker ps -a -q)"
 alias dockrmall="docker rm $(docker ps -a -q)"
 alias dcup="docker-compose up -d"
 alias dockprune="docker system prune -a"
-alias dcexec="docker-compose exec web bash"
-
-#TRAEFIK
-alias trfk="sudo ./traefik --configFile=traefik.toml"
+alias dcexec="docker-compose exec web bash"x
 
 # TRAEFIK
-alias traefik-start="sudo /Users/gerwin/Work/traefik/traefik -c /Users/gerwin/Work/traefik/traefik.toml"
+alias traefik-start="sudo ~/Work/traefik/traefik -c ~/Work/traefik/traefik.toml"
 
 #DIRECTORY
 alias cdyelptheme="cd ~/Work/yelp-docker/yelp-wp/wp-content/themes/yelp"
