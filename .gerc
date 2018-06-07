@@ -29,6 +29,8 @@ alias dockrmall="docker rm $(docker ps -a -q)"
 alias dcup="docker-compose up -d"
 alias dockprune="docker system prune -a"
 alias dcexec="docker-compose exec web bash"
+alias lu_proxy="docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro --net=loadup_network_bridge --name=jwilder_nginx jwilder/nginx-proxy"
+alias local_proxy="docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro --net=local_network_bridge --name=jwilder_nginx jwilder/nginx-proxy"
 
 #TRAEFIK
 alias trfk="sudo ./traefik --configFile=traefik.toml"
