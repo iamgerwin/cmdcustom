@@ -32,8 +32,8 @@ alias dcexec="docker-compose exec web bash"
 alias lu_proxy="docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro --net=loadup_network_bridge --name=jwilder_nginx jwilder/nginx-proxy"
 alias local_proxy="docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro --net=local_network_bridge --name=jwilder_nginx jwilder/nginx-proxy"
 
-#TRAEFIK
-alias trfk="sudo ./traefik --configFile=traefik.toml"
+# TRAEFIK
+alias traefik-start="sudo ~/Work/traefik/traefik -c ~/Work/traefik/traefik.toml"
 
 #DIRECTORY
 alias cdyelptheme="cd ~/Work/yelp-docker/yelp-wp/wp-content/themes/yelp"
@@ -74,4 +74,3 @@ build_prompt() {
   prompt_end
 }
 prompt_context() {}
-
