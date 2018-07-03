@@ -18,6 +18,8 @@ alias gc="git checkout"
 alias gb="git branch"
 alias gpullo="git pull origin"
 alias gpusho="git push origin"
+alias gpself="git push origin HEAD"
+alias gclean="git clean  -d  -fx ."
 
 #NPM
 alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stable && npm rebuild"
@@ -31,6 +33,7 @@ alias dockrmall="docker rm $(docker ps -a -q)"
 alias dcup="docker-compose up -d"
 alias dockprune="docker system prune -a"
 alias dcexec="docker-compose exec web bash"
+alias dcexecadmin="docker-compose exec admin bash"
 alias lu_proxy="docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro --net=loadup_network_bridge --name=jwilder_nginx jwilder/nginx-proxy"
 alias local_proxy="docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro --net=local_network_bridge --name=jwilder_nginx jwilder/nginx-proxy"
 
