@@ -9,6 +9,8 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export PATH=~/.npm-global/bin:$PATH
 
+alias a2stop="sudo service apache2 stop"
+
 #CONNECT MYSQL
 alias mysql-conenct-yelp="mysql --host=127.0.0.1 --port=3301 -u root -p"
 
@@ -23,6 +25,7 @@ alias gclean="git clean  -d  -fx ."
 
 #NPM
 alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stable && npm rebuild"
+alias nrw="node_modules/.bin/webpack --watch --watch-poll --config=node_modules/laravel-mix/setup/webpack.config.js"
 
 #PHP
 alias art="php artisan"
