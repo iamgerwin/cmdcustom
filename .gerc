@@ -1,6 +1,8 @@
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
+alias vpnme="sudo openvpn --config /home/gerwin/Work/gdelasalas.ovpn"
+
 #ADD THIS TO THE END OF .zshrc | .bashrc file
 #if [ -f ~/cmdcustom/.gerc ]; then
 #    . ~/cmdcustom/.gerc
@@ -26,6 +28,8 @@ alias gclean="git clean  -d  -fx ."
 #NPM
 alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stable && npm rebuild"
 alias nrw="node_modules/.bin/webpack --watch --watch-poll --config=node_modules/laravel-mix/setup/webpack.config.js"
+alias npm-install="npm i --ignore-scripts --no-audit --force"
+alias npm-verify="npm cache verify"
 
 #PHP
 alias art="php artisan"
