@@ -86,3 +86,6 @@ build_prompt() {
   prompt_end
 }
 prompt_context() {}
+
+# move interrupt to ctrl + z
+stty intr ^Z
