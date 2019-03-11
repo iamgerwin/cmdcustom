@@ -2,6 +2,7 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 alias vpnme="sudo openvpn --config /home/gerwin/Work/gdelasalas.ovpn"
+alias updateme="sudo apt update && sudo apt upgrade -y"
 
 #ADD THIS TO THE END OF .zshrc | .bashrc file
 #if [ -f ~/cmdcustom/.gerc ]; then
