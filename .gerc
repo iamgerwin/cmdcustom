@@ -2,6 +2,8 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 alias vpnme="sudo openvpn --config ~/Work/gdelasalas.ovpn"
+alias updateme="sudo apt update && sudo apt upgrade -y"
+
 
 #ADD THIS TO THE END OF .zshrc | .bashrc file
 #if [ -f ~/cmdcustom/.gerc ]; then
@@ -24,7 +26,8 @@ alias gpullo="git pull origin"
 alias gpusho="git push origin"
 alias gpself="git push origin HEAD"
 alias gclean="git clean  -d  -fx ."
-
+alias gac="git add . && git commit -m"
+alias gnewbranch="git checkout -b"
 #NPM
 alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stable && npm rebuild"
 alias nrw="node_modules/.bin/webpack --watch --watch-poll --config=node_modules/laravel-mix/setup/webpack.config.js"
