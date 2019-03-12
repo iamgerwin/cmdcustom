@@ -1,7 +1,7 @@
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
-alias vpnme="sudo openvpn --config /home/gerwin/Work/gdelasalas.ovpn"
+alias vpnme="sudo openvpn --config ~/Work/gdelasalas.ovpn"
 
 #ADD THIS TO THE END OF .zshrc | .bashrc file
 #if [ -f ~/cmdcustom/.gerc ]; then
@@ -38,12 +38,16 @@ alias art="php artisan"
 alias dockstopall="docker stop $(docker ps -a -q)"
 alias dockrmall="docker rm $(docker ps -a -q)"
 alias dcup="docker-compose up -d"
+alias dcstop="docker-compose stop"
+alias dcdown="docker-compose down"
 alias dockprune="docker system prune -a"
 alias dcexec="docker-compose exec web bash"
 alias dcexecadmin="docker-compose exec admin bash"
 alias dcexec2="docker-compose exec web2 bash"
 alias lu_proxy="docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro --net=loadup_network_bridge --name=jwilder_nginx jwilder/nginx-proxy"
 alias local_proxy="docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro --net=local_network_bridge --name=jwilder_nginx jwilder/nginx-proxy"
+alias dconstop="docker container stop $(docker container ls -aq)"
+alias dconrm="docker container rm $(docker container ls -aq)"
 
 # TRAEFIK
 alias traefik-start="sudo ~/Work/traefik/traefik -c ~/Work/traefik/traefik.toml"
