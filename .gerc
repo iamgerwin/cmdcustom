@@ -32,6 +32,7 @@ alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stab
 alias nrw="node_modules/.bin/webpack --watch --watch-poll --config=node_modules/laravel-mix/setup/webpack.config.js"
 alias npm-install="npm i --ignore-scripts --no-audit --force"
 alias npm-verify="npm cache verify"
+alias npm-rebuild="npm install && npm cache verify && npm run prod"
 
 #PHP
 alias art="php artisan"
