@@ -28,6 +28,9 @@ alias gpself="git push origin HEAD"
 alias gclean="git clean  -d  -fx ."
 alias gac="git add . && git commit -m"
 alias gnewbranch="git checkout -b"
+alias pushcicd="git push cicd master-cicd && git push origin master-cicd"
+alias gm="git merge"
+
 #NPM
 alias npm-clean="sudo npm cache clean -f && sudo npm install -g n && sudo n stable && npm rebuild"
 alias nrw="node_modules/.bin/webpack --watch --watch-poll --config=node_modules/laravel-mix/setup/webpack.config.js"
